@@ -4,9 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  
 </head>
 <body>
+  <div>
+    <ul id ="list">
+      <li>피가죽</li>
+      <li>뮤</li>
+      <li>파이리자몽</li>
+      <li>이상해씨벌</li>
+      <li>파찡코리타</li>
+      <li>롱스톤</li>
+      <li>꼬마돌</li>
+    </ul>
+  </div>
+  <script>
+    // html문서의 li에 써진 포켓몬을 선택했을 때 해당 포켓몬의 등급이 alert창을 통해 나타나는 프로그램
+    // 필요한 것 1.onclick 하면 alert창이 나타나는 기능(ul>li에 접근->addEventListener로 alert) 2.alert창에 선택한 포켓몬에 따라 등급의 문구가 바뀜(return에 등급을 알려줘야 하고, 고정문구가 필요)
+   let list = document.getElementById('list');
+
+  // //  for 문을 사용해야하 함
+  // for(let i=0; i<list.children.length; i++) { 
+  //   console.log(list.children[i]);
+  // };
+console.dir(list)
+// console.dir(choice);
+  list.onclick = function rankCount() {
+    alert("연결 확인");
+
+  }
   
+  // //  선택 했을 때 알림창 이벤트
+
+  //   // 포켓몬 등급을 찾는
+  //   let rankCount = document
+  //  function rankCount(poketmon) {  
+  //   return "네가 선택한 포켓몬은"+ rank + "등급이다"}
+  //   poketmon = {
+  //     rank : { 
+  //       // 포켓몬 등급
+  //       rare : ["피가죽", "뮤", "파이리자몽"],
+  //       normal : ["이상해씨벌", "파찡코리타"],
+  //       trash : ["롱스톤", "꼬마돌"]
+  //   }}
+  //   let choose = document.root
+  // //   for(let i=0; i<poketmon.length; i++) {
+  // //   console.log(iGotYou(poketmon.rare[i]));
+  // // }
+
+  // // object에 접근하는 방법 찾았다 찌발
+  // // console.dir(Object.values(poketmon))
+  // console.dir(poketmon.rank);
+    
+    
+
+  //  for(let i=0; i<iGotYou.length; i++) {
+  //     if(iGotYou[i] === iGotYou[1]) {
+  //       console.log(pikachu)
+  //     }
+  //     else {
+  //       console.log(normal);
+  //     }
+  // }
+
+  </script>
 </body>
 </html>
