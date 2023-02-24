@@ -12,12 +12,24 @@
 <body>
   <script>
    let root = document.getElementById('root');
-   function iGotYou(pikachu,pielee,kobuki) {  return pikachu, pielee, kobuki
-   for(let i=0; i<iGotYou.length; i++) {
-      if(iGotYou[i] === iGotYou[0]) {
-        console.log(rare)
-      }
-  }}
+
+   function iGotYou(poketmon) {  
+    return "내가 잡은 포켓몬은" + poketmon}
+    poketmon = ["피가죽","라이죽","초코파이리"];
+    for(let i=0; i<poketmon.length; i++) {
+    console.log(iGotYou(poketmon[i]));
+  }
+    
+    
+
+  //  for(let i=0; i<iGotYou.length; i++) {
+  //     if(iGotYou[i] === iGotYou[1]) {
+  //       console.log(pikachu)
+  //     }
+  //     else {
+  //       console.log(normal);
+  //     }
+  // }}
 
   </script>
 </body>
