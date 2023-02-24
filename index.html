@@ -15,10 +15,15 @@
 
    function iGotYou(poketmon) {  
     return "내가 잡은 포켓몬은" + poketmon}
-    poketmon = ["피가죽","라이죽","초코파이리"];
-    for(let i=0; i<poketmon.length; i++) {
-    console.log(iGotYou(poketmon[i]));
-  }
+    poketmon = {
+      rare : ["피가죽", "뮤", "파이리자몽"],
+      normal : ["이상해씨벌", "파찡코리타"]
+    }
+  //   for(let i=0; i<poketmon.length; i++) {
+  //   console.log(iGotYou(poketmon.rare[i]));
+  // }
+
+  console.dir(poketmon)
     
     
 
