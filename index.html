@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <div id="root">
+    <h1></h1>
+    <h1></h1>
+  </div>
 </head>
 <body>
   <script>
-    let rubin = 1;
-    console.log(rubin);
-    rubin = "바보";
-    console.log(rubin);
-    function valueChange(a, b, c) {
-      return a+b+c;
-    }
-    rubin = valueChange(1,2,3);
-    console.log(rubin);
+   let root = document.getElementById('root');
+   function plusCalculator(a,b) {
+    return a+b;
+   }
+  //  숫자를 입력하세요
+   a = 1;
+   b = 2;
+   console.log(plusCalculator(a,b));
   </script>
 </body>
 </html>
