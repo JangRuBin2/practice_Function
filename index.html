@@ -19,21 +19,35 @@
     </ul>
   </div>
   <script>
+    let li = document.getElementById('list');
+
+   for(let i=0; i<li.children.length; i++)
+   {
+    if(li.children[i] === li.children[3]) {
+      li.children[3].style.background='red';
+    }
+    else {
+      li.children[i].style.background='blue';
+    }   
+    }
+
+
+      
+   
     // html문서의 li에 써진 포켓몬을 선택했을 때 해당 포켓몬의 등급이 alert창을 통해 나타나는 프로그램
     // 필요한 것 1.onclick 하면 alert창이 나타나는 기능(ul>li에 접근->addEventListener로 alert) 2.alert창에 선택한 포켓몬에 따라 등급의 문구가 바뀜(return에 등급을 알려줘야 하고, 고정문구가 필요)
-   let list = document.getElementById('list');
+//    let list = document.getElementById('list');
+//     let choice = list.child
+//   // //  for 문을 사용해야하 함
+//   // for(let i=0; i<list.children.length; i++) { 
+//   //   console.log(list.children[i]);
+//   // };
+// console.dir(list)
+// // console.dir(choice);
+//   list.onclick = function rankCount() {
+//     alert("연결 확인");
 
-  // //  for 문을 사용해야하 함
-  // for(let i=0; i<list.children.length; i++) { 
-  //   console.log(list.children[i]);
-  // };
-console.dir(list)
-// console.dir(choice);
-  list.onclick = function rankCount() {
-    alert("연결 확인");
 
-  }
-  
   // //  선택 했을 때 알림창 이벤트
 
   //   // 포켓몬 등급을 찾는
