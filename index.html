@@ -4,29 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <div id="root">
-    <h1></h1>
-    <h1></h1>
+  <div>
+    <ul id ="list">
+      <li>피가죽</li>
+      <li>뮤</li>
+      <li>파이리자몽</li>
+      <li>이상해씨벌</li>
+      <li>파찡코리타</li>
+      <li>롱스톤</li>
+      <li>꼬마돌</li>
+    </ul>
   </div>
 </head>
 <body>
   <script>
-   let root = document.getElementById('root');
+   let root = document.getElementById('list');
 
    function iGotYou(poketmon) {  
-    return "내가 잡은 포켓몬은" + poketmon}
+    return "네가 선택한 포켓몬은"+ rank + "등급이다"}
     poketmon = {
-      rare : ["피가죽", "뮤", "파이리자몽"],
-      normal : ["이상해씨벌", "파찡코리타"],
-      trash : ["롱스톤", "꼬마돌"]
-    }
+      rank : { 
+        // 포켓몬 등급
+        rare : ["피가죽", "뮤", "파이리자몽"],
+        normal : ["이상해씨벌", "파찡코리타"],
+        trash : ["롱스톤", "꼬마돌"]
+    }}
+    let choose = document.root
   //   for(let i=0; i<poketmon.length; i++) {
   //   console.log(iGotYou(poketmon.rare[i]));
   // }
 
   // object에 접근하는 방법 찾았다 찌발
   // console.dir(Object.values(poketmon))
-  console.dir(poketmon);
+  console.dir(poketmon.rank);
     
     
 
